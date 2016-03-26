@@ -60,7 +60,11 @@
                                                 </div>
                                             <?php } ?>
                                     </div>
-                                    <?php $counter ++ ?>
+                            <?php
+                                if ($counter % intval($itemsize) == 0)
+                                    echo '</div><div class="rowtight homepromo">';
+                                $counter ++
+                            ?>
                         <?php endforeach; ?>
                     </div> <!--homepromo -->
                 </div>
