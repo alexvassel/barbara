@@ -61,7 +61,7 @@
                                             <?php } ?>
                                     </div>
                             <?php
-                                if ($counter % intval($itemsize) == 0)
+                                if ($counter % intval($columnsize) == 0)
                                     echo '</div><div class="rowtight homepromo">';
                                 $counter ++
                             ?>
