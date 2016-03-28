@@ -45,3 +45,21 @@ require_once locate_template('/lib/admin_scripts.php');    								// Admin Scri
 require_once locate_template('/lib/scripts.php');        								// Scripts and stylesheets
 require_once locate_template('/lib/output_css.php'); 									// Fontend Custom CSS
 
+//Заполнение select турами из БД
+function _update_form( $data, $field_id ){
+	// $data will contain all of the field settings that have been saved for this field.
+	// Let's change the default value of the field if it has an ID of 148
+	$options = array();
+	$wp_query = new WP_Query('post_type=portfolio');
+	   // Это поле с id == 6
+	   if ( $field_id == 6 ) {
+            while ( $wp_query->have_posts() ) {
+                 $wp_query->the_post();
+                 $option = array('label' => get_the_title(), 'value' => get_the_title(), 'calc' => null, 'selected' => 0) ;
+                 array_push($options, $option);
+                }
+	        $data['list']['options'] = $options;
+	    }
+	return $data;
+}
+add_filter( 'ninja_forms_field', '_update_form', 10, 2 );
