@@ -161,7 +161,7 @@
                         				    						$project_v4d = get_post_meta( $post->ID, '_kad_project_val04_description', true );
                         				    						$project_v5t = get_post_meta( $post->ID, '_kad_project_val05_title', true );
                         				    						$project_v5d = get_post_meta( $post->ID, '_kad_project_val05_description', true ); ?>
-                                <?php if (!empty($project_v1t) || !empty($project_v2t) || !empty($project_v3t) || !empty($project_v4t) || !empty($project_v5t)) { ?>
+                                <?php if (!empty($project_v1t) || !empty($project_v2t) || !empty($project_v3t) || !empty($project_v4t) || !empty($project_v5t) || the_meta()) { ?>
                                   <div class="pcbelow">
                                     <ul class="portfolio-content disc">
                           				    <?php if (!empty($project_v1t)) echo '<li class="pdetails"><span>'.esc_html($project_v1t).'</span> '.esc_html($project_v1d).'</li>'; ?>
@@ -170,7 +170,7 @@
                           				    <?php if (!empty($project_v4t)) echo '<li class="pdetails"><span>'.esc_html($project_v4t).'</span> '.esc_html($project_v4d).'</li>'; ?>
                           				    <?php if (!empty($project_v5t)) echo '<li class="pdetails"><span>'.esc_html($project_v5t).'</span> <a href="'.esc_url($project_v5d).'" target="_new">'.esc_html($project_v5d).'</a></li>'; ?>
                         				    <?php do_action( 'kadence_single_portfolio_list_li' );  ?> 
-                                    </ul><!--Portfolio-content-->
+                                    </ul><!--Portfolio-content--><?php the_meta(); ?>
                       				    </div>
                                 <?php }?>
                                 <?php do_action( 'kadence_single_portfolio_value_after' );  ?> 
