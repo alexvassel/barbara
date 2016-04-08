@@ -52,7 +52,7 @@ function _update_form( $data, $field_id ){
 	$options = array();
 	$wp_query = new WP_Query('post_type=portfolio');
 	   // Это поле с id == 6
-	   if ( $field_id == 6 ) {
+	   if ( $field_id == 6 || $field_id == 21) {
             while ( $wp_query->have_posts() ) {
                  $wp_query->the_post();
                  $option = array('label' => get_the_title(), 'value' => get_the_title(), 'calc' => null, 'selected' => 0) ;
