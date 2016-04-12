@@ -29,8 +29,8 @@ $icons = $query->get_posts();
                                              ?>
                                     </div>
                             <?php
-                                if ($counter % intval($columnsize) == 0)
-                                    echo '</div><div class="rowtight homepromo">';
+                                if ($counter % 2 == 0)
+                                    echo '<div class="clearfix visible-xs"></div>';
                                 $counter ++
                             ?>
                         <?php endforeach; ?>
