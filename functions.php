@@ -63,3 +63,9 @@ function _update_form( $data, $field_id ){
 	return $data;
 }
 add_filter( 'ninja_forms_field', '_update_form', 10, 2 );
+
+function my_pll_get_post_types($types) {
+	return array_merge($types, array('icon' => 'icon', 'banner' => 'banner'));
+}
+
+add_filter('pll_get_post_types', 'my_pll_get_post_types');
