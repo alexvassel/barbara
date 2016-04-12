@@ -1032,7 +1032,7 @@ Redux::setSection( $opt_name, array(
             'transparent'=>false,
             'validate' => 'color',
             'output' => array('color' => '.home-iconmenu .home-icon-item h4, .home-iconmenu .home-icon-item p ', 'background-color' => '.home-iconmenu .home-icon-item h4:after'),
-            ),*/
+            ),
             array(
             'id'=>'info_calltoaction_home_settings',
             'type' => 'info',
@@ -1122,7 +1122,7 @@ Redux::setSection( $opt_name, array(
                 'customizer' => false,
                 'output'    => array('.kt-home-call-to-action'),
                 'title'     => __('Call to action background', 'pinnacle'),
-                ),
+                ),*/
            array(
             'id'=>'info_page_content',
             'type' => 'info',
