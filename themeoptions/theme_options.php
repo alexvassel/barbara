@@ -969,6 +969,12 @@ Redux::setSection( $opt_name, array(
             'type' => 'info',
             'customizer' => false,
             'desc' => __('Home Icon Menu', 'pinnacle'),
+            ),/*
+           array(
+            'id'=>'info_iconmenu_settings',
+            'type' => 'info',
+            'customizer' => false,
+            'desc' => __('Home Icon Menu', 'pinnacle'),
             ),
            array(
             'id'=>'icon_menu',
@@ -1026,7 +1032,7 @@ Redux::setSection( $opt_name, array(
             'transparent'=>false,
             'validate' => 'color',
             'output' => array('color' => '.home-iconmenu .home-icon-item h4, .home-iconmenu .home-icon-item p ', 'background-color' => '.home-iconmenu .home-icon-item h4:after'),
-            ),
+            ),*/
             array(
             'id'=>'info_calltoaction_home_settings',
             'type' => 'info',
