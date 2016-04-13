@@ -963,13 +963,13 @@ Redux::setSection( $opt_name, array(
             'customizer' => false,
             'title' => __('Display Portfolio excerpt under Title', 'pinnacle'),
             "default" => 0,
-            ),
+            ),/*
            array(
             'id'=>'info_iconmenu_settings',
             'type' => 'info',
             'customizer' => false,
             'desc' => __('Home Icon Menu', 'pinnacle'),
-            ),/*
+            ),
            array(
             'id'=>'info_iconmenu_settings',
             'type' => 'info',
@@ -982,7 +982,7 @@ Redux::setSection( $opt_name, array(
             'customizer' => false,
             'title' => __('Icon Menu', 'pinnacle'),
             'subtitle'=> __('Choose your icons for the icon menu.', 'pinnacle'),
-        ), 
+        ),*/ 
             array(
             'id'=>'home_icon_menu_column',
             'type' => 'slider', 
@@ -1122,7 +1122,7 @@ Redux::setSection( $opt_name, array(
                 'customizer' => false,
                 'output'    => array('.kt-home-call-to-action'),
                 'title'     => __('Call to action background', 'pinnacle'),
-                ),*/
+                ),
            array(
             'id'=>'info_page_content',
             'type' => 'info',
